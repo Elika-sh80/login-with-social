@@ -67,47 +67,45 @@ section.social i {
     background-color: #c33e32;
 }
 
-#desktopicon img {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    width: 30px;
-    height: 170px;
+#desktopicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+    width: 2.5px;
+    height: 110px;
+    margin-top: 20px;
 }
 
 #desktopicon p {
-    margin-top: 65px;
-    background-color: rgb(213, 212, 212);
-    z-index: 2;
-    position: absolute;
+    background-color: rgb(222, 220, 220);
     padding: 10px;
     border-radius: 50%;
 }
-#mobileicon{
-    display: none;
-}
-#mobileicon img {
+
+#mobileicon {
     display: block;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    bottom: 20px;
-    width: 300px;
-    height: 20px;
-    
+    margin: 50px auto;
+    background-color: rgb(206, 200, 200);
+    width: 130px;
+    height: 2.5px;
 }
 
 #mobileicon p {
     display: block;
     margin: auto;
-    top: 41%;
-    margin-left: 45%;
-    background-color: rgb(213, 212, 212);
-    z-index: 2;
-    position: absolute;
+    text-align: center;
+    background-color: rgb(225, 223, 223);
     padding: 10px;
     border-radius: 50%;
+    width: 20px;
+    transform: translate(-9%, -50%);
 }
+
+#mobileicon {
+    display: none;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -159,7 +157,6 @@ div#signup a:hover {
 @media(max-width:700px) {
     main {
         display: flex;
-        flex: 1;
         flex-direction: column;
         justify-content: center;
 
@@ -185,9 +182,9 @@ div#signup a:hover {
 
     }
 
-    #google {
-        margin-bottom: 50px;
-    }
+    /* #google{
+    margin-bottom: 50px;
+} */
 
     div#signup {
         width: 90%;
@@ -196,7 +193,8 @@ div#signup a:hover {
     #desktopicon {
         display: none;
     }
-    #mobileicon{
+
+    #mobileicon {
         display: block;
     }
 }
@@ -213,7 +211,8 @@ div#signup a:hover {
     #desktopicon {
         display: none;
     }
-    #mobileicon{
+
+    #mobileicon {
         display: block;
     }
 }
